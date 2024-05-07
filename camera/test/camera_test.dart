@@ -1512,11 +1512,11 @@ class MockCameraPlatform extends Mock
 
   @override
   Future<XFile> startVideoRecording(int cameraId,
-          {Duration? maxVideoDuration}) =>
+          {Duration? maxVideoDuration,String? extensionName}) =>
       Future<XFile>.value(mockVideoRecordingXFile);
 
   @override
-  Future<void> startVideoCapturing(VideoCaptureOptions options) {
+  Future<void> startVideoCapturing(VideoCaptureOptions options,{String? extensionName}) {
     return startVideoRecording(options.cameraId,
         maxVideoDuration: options.maxDuration);
   }

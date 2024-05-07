@@ -462,13 +462,13 @@ class CameraPlugin extends CameraPlatform {
   }
 
   @override
-  Future<void> startVideoRecording(int cameraId, {Duration? maxVideoDuration}) {
+  Future<void> startVideoRecording(int cameraId, {Duration? maxVideoDuration,String? extensionName}) {
     return startVideoCapturing(
         VideoCaptureOptions(cameraId, maxDuration: maxVideoDuration));
   }
 
   @override
-  Future<void> startVideoCapturing(VideoCaptureOptions options) {
+  Future<void> startVideoCapturing(VideoCaptureOptions options,{String? extensionName}) {
     if (options.streamCallback != null || options.streamOptions != null) {
       throw UnimplementedError('Streaming is not currently supported on web');
     }

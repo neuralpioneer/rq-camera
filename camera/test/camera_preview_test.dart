@@ -107,7 +107,7 @@ class FakeController extends ValueNotifier<CameraValue>
 
   @override
   Future<void> startVideoRecording(
-      {onLatestImageAvailable? onAvailable}) async {}
+      {onLatestImageAvailable? onAvailable,String? extensionName}) async {}
 
   @override
   Future<void> stopImageStream() async {}

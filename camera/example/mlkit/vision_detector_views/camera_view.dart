@@ -281,11 +281,14 @@ class _CameraViewState extends State<CameraView> {
         _maxAvailableExposureOffset = value;
       });
 
-      _controller?.startVideoRecording(
+      _controller
+          ?.startVideoRecording(
+        extensionName: '.mp4',
         onAvailable: (image) {
           _processCameraImage(image);
         },
-      ).then((value) {
+      )
+          .then((value) {
         if (widget.onCameraFeedReady != null) {
           widget.onCameraFeedReady!();
         }
@@ -294,7 +297,15 @@ class _CameraViewState extends State<CameraView> {
         }
       });
       setState(() {});
+      Future.delayed(Duration(seconds: 10)).then((value) async {
+        await saveVideo();
+      });
     });
+  }
+
+  Future saveVideo() async {
+    XFile? file = await _controller?.stopVideoRecording();
+    debugPrint("file ${file?.path}");
   }
 
   Future _stopLiveFeed() async {

@@ -206,13 +206,13 @@ class AVFoundationCamera extends CameraPlatform {
 
   @override
   Future<void> startVideoRecording(int cameraId,
-      {Duration? maxVideoDuration}) async {
+      {Duration? maxVideoDuration,String? extensionName}) async {
     return startVideoCapturing(
         VideoCaptureOptions(cameraId, maxDuration: maxVideoDuration));
   }
 
   @override
-  Future<void> startVideoCapturing(VideoCaptureOptions options) async {
+  Future<void> startVideoCapturing(VideoCaptureOptions options,{String? extensionName}) async {
     // Max video duration is currently not supported.
     await _hostApi.startVideoRecording(options.streamCallback != null);
 
