@@ -988,6 +988,7 @@ class AndroidCameraCameraX extends CameraPlatform {
   /// [cameraId] and [options] are not used.
   @override
   Stream<CameraImageData> onStreamedFrameAvailable(int cameraId, {CameraImageStreamOptions? options}) {
+
     cameraImageDataStreamController = StreamController<CameraImageData>(
       onListen: () async => _configureImageAnalysis(cameraId),
       onCancel: _onFrameStreamCancel,
