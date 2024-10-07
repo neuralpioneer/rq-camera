@@ -15,7 +15,7 @@
     },
     {
       "name": "camera_platform_interface",
-      "rootUri": "../../camera_platform_interface",
+      "rootUri": "file:///Users/raven/.pub-cache/git/rq-camera-0320222aaee00d29f81766912cf3415556cded6f/camera_platform_interface",
       "packageUri": "lib/",
       "languageVersion": "3.1"
     },
@@ -188,7 +188,7 @@
       "languageVersion": "3.1"
     }
   ],
-  "generated": "2024-10-07T12:45:03.044475Z",
+  "generated": "2024-10-07T12:56:07.783790Z",
   "generator": "pub",
   "generatorVersion": "3.5.3",
   "flutterRoot": "file:///Users/raven/development/flutter",
