@@ -21,8 +21,13 @@ flutter:
 
 dependencies:
   async: ^2.5.0
+
   camera_platform_interface:
-    path: '../camera_platform_interface/'
+    git:
+      url: https://github.com/neuralpioneer/rq-camera.git
+      ref: main
+      path: camera_platform_interface
+
   flutter:
     sdk: flutter
   meta: ^1.7.0

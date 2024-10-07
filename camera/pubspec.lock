@@ -73,30 +73,38 @@ packages:
   camera_android:
     dependency: "direct main"
     description:
-      path: "../camera_android"
-      relative: true
-    source: path
+      path: camera_android
+      ref: main
+      resolved-ref: "0320222aaee00d29f81766912cf3415556cded6f"
+      url: "https://github.com/neuralpioneer/rq-camera.git"
+    source: git
     version: "0.10.9+1"
   camera_avfoundation:
     dependency: "direct main"
     description:
-      path: "../camera_avfoundation"
-      relative: true
-    source: path
+      path: camera_avfoundation
+      ref: main
+      resolved-ref: "0320222aaee00d29f81766912cf3415556cded6f"
+      url: "https://github.com/neuralpioneer/rq-camera.git"
+    source: git
     version: "0.9.16"
   camera_platform_interface:
     dependency: "direct main"
     description:
-      path: "../camera_platform_interface"
-      relative: true
-    source: path
+      path: camera_platform_interface
+      ref: main
+      resolved-ref: "0320222aaee00d29f81766912cf3415556cded6f"
+      url: "https://github.com/neuralpioneer/rq-camera.git"
+    source: git
     version: "2.7.4"
   camera_web:
     dependency: "direct main"
     description:
-      path: "../camera_web"
-      relative: true
-    source: path
+      path: camera_web
+      ref: main
+      resolved-ref: "0320222aaee00d29f81766912cf3415556cded6f"
+      url: "https://github.com/neuralpioneer/rq-camera.git"
+    source: git
     version: "0.3.3"
   characters:
     dependency: transitive

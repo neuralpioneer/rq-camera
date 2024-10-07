@@ -108,9 +108,11 @@ packages:
   camera_platform_interface:
     dependency: "direct main"
     description:
-      path: "../camera_platform_interface"
-      relative: true
-    source: path
+      path: camera_platform_interface
+      ref: main
+      resolved-ref: "0320222aaee00d29f81766912cf3415556cded6f"
+      url: "https://github.com/neuralpioneer/rq-camera.git"
+    source: git
     version: "2.7.4"
   characters:
     dependency: transitive
