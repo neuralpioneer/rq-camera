@@ -6,6 +6,8 @@ issue_tracker: https://github.com/flutter/flutter/issues?q=is%3Aissue+is%3Aopen+
 # less-clean API. See https://flutter.dev/go/platform-interface-breaking-changes
 version: 2.7.4
 
+publish_to: none
+
 environment:
   sdk: ^3.1.0
   flutter: ">=3.13.0"

@@ -4,6 +4,8 @@ repository: https://github.com/flutter/packages/tree/main/packages/camera/camera
 issue_tracker: https://github.com/flutter/flutter/issues?q=is%3Aissue+is%3Aopen+label%3A%22p%3A+camera%22
 version: 0.9.16
 
+publish_to: none
+
 environment:
   sdk: ^3.2.3
   flutter: ">=3.16.6"
@@ -17,9 +19,6 @@ flutter:
         dartPluginClass: AVFoundationCamera
 
 dependencies:
-#  camera_platform_interface: ^2.7.0
-
-  # uncomment these lines when working on the local plugins
   camera_platform_interface:
     path: '../camera_platform_interface/'
   flutter:

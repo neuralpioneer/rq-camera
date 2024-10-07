@@ -4,6 +4,8 @@ repository: https://github.com/flutter/packages/tree/main/packages/camera/camera
 issue_tracker: https://github.com/flutter/flutter/issues?q=is%3Aissue+is%3Aopen+label%3A%22p%3A+camera%22
 version: 0.6.4+1
 
+publish_to: none
+
 environment:
   sdk: ^3.1.0
   flutter: ">=3.13.0"
@@ -19,8 +21,6 @@ flutter:
 
 dependencies:
   async: ^2.5.0
-#  camera_platform_interface: ^2.6.0
-  # uncomment these lines when working on the local plugins
   camera_platform_interface:
     path: '../camera_platform_interface/'
   flutter:

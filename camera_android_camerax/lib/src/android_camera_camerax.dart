@@ -895,7 +895,7 @@ class AndroidCameraCameraX extends CameraPlatform {
       // Handle level 3 device restrictions:
       final bool cameraSupportsHardwareLevel3 =
           cameraInfoSupportedHardwareLevel == CameraMetadata.infoSupportedHardwareLevel3;
-      if (!cameraSupportsHardwareLevel3 || streamCallback == null) {
+      if (!cameraSupportsHardwareLevel3) {
         // Concurrent preview + video recording + image streaming is not supported
         // unless the camera device is cameraSupportsHardwareLevel3 or better.
         streamCallback = null;
